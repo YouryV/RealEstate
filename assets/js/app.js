@@ -49,6 +49,39 @@ $(function () {
         $("#nav").toggleClass("active");
     });
 
+//    Slider
+    if (window.innerWidth > 320) {
+        sliderIsLive = false;
+      } else {
+        sliderIsLive = true;
+        checkSlider(sliderIsLive);
+      }
 
+    window.addEventListener("resize", function() {
+        if (window.innerWidth > 320) {
+            sliderIsLive = false;
+        } else {
+            sliderIsLive = true;
+        }
+        checkSlider(sliderIsLive);
+    });
+
+    function checkSlider(sliderIsLive) {
+        if (sliderIsLive) {
+            $("[data-slider]").slick({
+                infinite: true,
+                fade: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: true,
+                dotsClass: "dots-style"
+            });
+        } else {
+            $('[data-slider]').slick('unslick');
+        }
+    }
 
 });
+
+
