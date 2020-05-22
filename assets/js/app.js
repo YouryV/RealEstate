@@ -50,7 +50,7 @@ $(function () {
     });
 
 //    Slider
-    if (window.innerWidth > 320) {
+    if (window.innerWidth > 650) {
         sliderIsLive = false;
       } else {
         sliderIsLive = true;
@@ -58,7 +58,7 @@ $(function () {
       }
 
     window.addEventListener("resize", function() {
-        if (window.innerWidth > 320) {
+        if (window.innerWidth > 650) {
             sliderIsLive = false;
         } else {
             sliderIsLive = true;
