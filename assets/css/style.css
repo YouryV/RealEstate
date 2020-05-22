@@ -281,7 +281,6 @@ h6 {
 }
 
 .about__title {
-/*    padding-top: 70px;*/
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     font-weight: 700;
@@ -422,8 +421,8 @@ h6 {
 }
 
 .clients__item {
-    padding: 40px 0;
     display: block;
+    padding: 40px 0;
 }
 
 .contacts {
@@ -535,10 +534,6 @@ h6 {
 }
 
 @media (max-width: 1110px) {
-    .container {
-/*        max-width: 950px;*/
-    }
-
     .section {
         padding: 60px 0;
     }
@@ -636,9 +631,17 @@ h6 {
         height: auto;
     }
 
+    .clients__item {
+        width: 100%;
+        max-width: 25%;
+    }
+
     .clients img {
+        display: block;
         width: 210px;
         height: auto;
+        padding: 5px;
+        margin: 0 auto;
     }
 }
 
@@ -651,6 +654,14 @@ h6 {
 }
 
 @media (max-width: 890px) {
+    .clients__item {
+        max-width: 25%;
+    }
+
+    .clients img {
+        width: 100%;
+    }
+
     .footer .header__inner {
         flex-direction: column;
     }
@@ -818,10 +829,6 @@ h6 {
         display: none;
     }
 
-    .reviews {
-/*        flex-wrap: wrap;*/
-    }
-
     .reviews__item {
         padding-left: 2px;
         margin-bottom: 50px;
@@ -829,6 +836,7 @@ h6 {
 
     .clients__item {
         width: 50%;
+        max-width: 50%;
         padding: 20px 0;
     }
 
