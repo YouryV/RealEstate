@@ -712,18 +712,11 @@ a {
     }
 }
 
-
-@media (max-width: 860px) {
-
-}
-
 @media (max-width: 650px) {
     .reviews__item {
         padding-right: 0;
     }
-}
 
-@media (max-width: 590px) {
     .working {
         flex-direction: column;
         max-height: 300px;
