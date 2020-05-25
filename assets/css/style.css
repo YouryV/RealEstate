@@ -723,7 +723,7 @@ a {
     }
 }
 
-@media (max-width: 565px) {
+@media (max-width: 590px) {
     .working {
         flex-direction: column;
         max-height: 300px;
